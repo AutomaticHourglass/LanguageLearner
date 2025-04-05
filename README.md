@@ -30,10 +30,10 @@ LanguageLearner/
 │   └── deutsch.py      # German vocabulary words
 │
 ├── src/                # Source code
-│   ├── main.py         # Main application code
 │   ├── prompts.py      # Prompt templates for the language model
 │   └── tts.py          # Text-to-speech functionality
 │
+├── main.py             # Main application file
 ├── README.md           # Documentation
 └── requirements.txt    # Dependencies
 ```
@@ -51,7 +51,7 @@ LanguageLearner/
    pip install -r requirements.txt
    ```
 
-3. Add your language model path in `src/main.py`:
+3. Add your language model path in `main.py`:
    ```python
    model_path_token = "path/to/your/model"
    ```
@@ -86,7 +86,7 @@ The application will:
 ## Customization
 
 - Add new vocabulary words in `data/deutsch.py`
-- Adjust the delay between words by modifying the `time.sleep()` value in `src/main.py`
+- Adjust the delay between words by modifying the `time.sleep()` value in `main.py`
 - Change the voice settings in `src/tts.py`
 
 ## License
